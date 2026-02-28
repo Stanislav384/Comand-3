@@ -1,5 +1,104 @@
-/* ЦЕЙ ДИЗАЙН ТІЛЬКИ ДЛЯ ТОГО ЩО БУДЕ В КОЖНІЙ СТОРІНЦІ ОДНАКОВЕ!!! */
-/* Тобто це не дизайн однієї сторінки а УСІХ сторінок */
-/* Тут може бути дизайн меню, футера (контактна інформація), і те що є
-на кожній сторінці ОДИНАКОВЕ!!!! */
-
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:#0a0a0a;
+}
+.leftpanel{
+    position: fixed;
+    width: 200px;
+    height: 100vh;
+    border-right: 2px solid dimgray;
+    border-bottom: 2px solid dimgray;
+    border-top: 2px solid dimgray;
+    background-color:#0a0a0a;
+}
+.LOGO{
+    width: 15vh;
+    height: 50px;
+    padding: 10px 0px;
+    border-bottom: 2px solid dimgray;
+}
+.unselected{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0px 0px 0px 5px;
+    background-color: #0a0a0a;
+    width: 180px;
+    height: 50px;
+    border-radius: 10px;
+}
+.selected{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0px 0px 0px 5px;
+    background-color: rgb(59, 59, 59);
+    width: 180px;
+    height: 50px;
+    border-radius: 10px;
+}
+.unselected:hover{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0px 0px 0px 5px;
+    background-color: dimgray;
+    width: 180px;
+    height: 50px;
+    border-radius: 10px;
+}
+.leftpanel svg{
+    display: block;
+    fill: white
+}
+.icon .path-target{
+    display: none;
+}
+.icon_selected .path-original{
+    display: none;
+}
+.icon_selected .path-target{
+    display: flex;
+}
+.leftpanel .BUTTONTITLE{
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    padding: 0px 0px 0px 20px;
+}
+.leftpanel .new{
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+.sigma{
+    border-bottom: 2px solid dimgray;
+    margin: 4px 0px 0px 0px;
+}
+.BUTTONNEW{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-top: 20px;
+    background-color: rgb(59, 59, 59);
+    width: 160px;
+    height: 40px;
+    border-radius: 40px;
+}
+.BUTTONNEW:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-top: 20px;
+    background-color: dimgray;
+    width: 160px;
+    height: 40px;
+    border-radius: 40px;
+}
