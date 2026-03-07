@@ -1,178 +1,104 @@
-/* Общие настройки */
-* {
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
-
-body {
-    background-color: #030303;
-    font-family: 'Roboto', sans-serif, Arial;
-    color: white;
-    overflow-x: hidden;
+body{
+    background-color:#0a0a0a;
 }
-
-.container {
-    display: flex;
-}
-
-/* Боковая панель (Твой стиль) */
-.leftpanel {
+.leftpanel{
     position: fixed;
-    width: 240px;
+    width: 200px;
     height: 100vh;
-    border-right: 1px solid #282828;
-    background-color: #030303;
-    padding: 15px;
-    z-index: 100;
+    border-right: 2px solid dimgray;
+    border-bottom: 2px solid dimgray;
+    border-top: 2px solid dimgray;
+    background-color:#0a0a0a;
 }
-
-.LOGO {
-    width: 120px;
-    margin-bottom: 20px;
-    display: block;
+.LOGO{
+    width: 15vh;
+    height: 50px;
+    padding: 10px 0px;
+    border-bottom: 2px solid dimgray;
 }
-
-.leftpanel a {
+.unselected{
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #aaaaaa;
-    padding: 12px;
-    border-radius: 8px;
-    margin-bottom: 5px;
-    transition: 0.2s;
+    padding: 0px 0px 0px 5px;
+    background-color: #0a0a0a;
+    width: 180px;
+    height: 50px;
+    border-radius: 10px;
 }
-
-.selected {
-    background-color: #272727;
-    color: white !important;
+.selected{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0px 0px 0px 5px;
+    background-color: rgb(59, 59, 59);
+    width: 180px;
+    height: 50px;
+    border-radius: 10px;
 }
-
-.unselected:hover {
-    background-color: #1a1a1a;
+.unselected:hover{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0px 0px 0px 5px;
+    background-color: dimgray;
+    width: 180px;
+    height: 50px;
+    border-radius: 10px;
+}
+.leftpanel svg{
+    display: block;
+    fill: white
+}
+.icon .path-target{
+    display: none;
+}
+.icon_selected .path-original{
+    display: none;
+}
+.icon_selected .path-target{
+    display: flex;
+}
+.leftpanel .BUTTONTITLE{
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    padding: 0px 0px 0px 20px;
+}
+.leftpanel .new{
+    font-weight: bold;
+    font-size: 20px;
     color: white;
 }
-
-.BUTTONTITLE {
-    font-weight: bold;
-    font-size: 16px;
-    margin-left: 15px;
+.sigma{
+    border-bottom: 2px solid dimgray;
+    margin: 4px 0px 0px 0px;
 }
-
-.sigma {
-    border-bottom: 1px solid #282828;
-    margin: 15px 0;
-}
-
-.BUTTONNEW {
+.BUTTONNEW{
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    background-color: #272727;
-    width: 100%;
-    height: 45px;
-    border-radius: 40px;
+    margin-left: 10px;
     margin-top: 20px;
-    transition: 0.2s;
+    background-color: rgb(59, 59, 59);
+    width: 160px;
+    height: 40px;
+    border-radius: 40px;
 }
-
-.BUTTONNEW:hover {
-    background-color: #3f3f3f;
-}
-
-.new {
-    font-weight: bold;
-    color: white;
-}
-
-/* Контентная часть */
-.content {
-    margin-left: 240px;
-    padding: 40px;
-    width: 100%;
-}
-
-h1 {
-    font-size: 32px;
-    margin-bottom: 30px;
-}
-
-/* Сетка карточек (Main и Explore) */
-.music-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 25px;
-}
-
-.card {
-    background: #121212;
-    padding: 15px;
-    border-radius: 12px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.card:hover {
-    background: #212121;
-}
-
-.card img {
-    width: 100%;
-    aspect-ratio: 1/1;
-    border-radius: 8px;
-    margin-bottom: 12px;
-    object-fit: cover;
-}
-
-.t-main {
-    font-weight: bold;
-    font-size: 15px;
-    margin-bottom: 5px;
-}
-
-.t-sub {
-    color: #aaaaaa;
-    font-size: 13px;
-}
-
-/* Плитки категорий (Explore) */
-.category-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 15px;
-    margin-bottom: 40px;
-}
-
-.category-card {
-    height: 100px;
-    border-radius: 10px;
+.BUTTONNEW:hover{
     display: flex;
-    align-items: flex-end;
-    padding: 15px;
-    font-weight: bold;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-/* Список (Library) */
-.lib-item {
-    display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 15px;
-    padding: 10px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-.lib-item:hover {
-    background: #1a1a1a;
-}
-
-.lib-item img {
-    width: 50px;
-    height: 50px;
-    border-radius: 4px;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-top: 20px;
+    background-color: dimgray;
+    width: 160px;
+    height: 40px;
+    border-radius: 40px;
 }
