@@ -11,7 +11,7 @@
     <div class="leftpanel">
         <img class="LOGO" alt="" src="on_platform_logo_dark.svg">
         <!--- Main --->
-        <a href="index.html" class="selected"> <!--Когда будешь делать другие страницы то поставь класс селектед только если это та страница на которой мы сейчас(Напривер щас мы на Main). Если нет то поставь класс unselected-->
+        <a href="index.html" class="unselected"> <!--Когда будешь делать другие страницы то поставь класс селектед только если это та страница на которой мы сейчас(Напривер щас мы на Main). Если нет то поставь класс unselected-->
             <svg class="icon_selected" viewBox="0 0 24 24" width="28" height="28"> <!-- Тут тоже, просто если не выбран то убираешь "_selected", если выбран то оставляешь "_selected"-->
                 <!-- Original path -->
                 <path 
@@ -27,7 +27,7 @@
             <span class="BUTTONTITLE">Main</span>
         </a>
         <!--- Navigation --->
-        <a href="navigation.html" class="unselected">
+        <a href="navigation.html" class="selected">
             <svg class="icon" viewBox="0 0 24 24" width="28" height="28">
                 <!-- Original path -->
                 <path 
@@ -80,7 +80,33 @@
             <span class="new">New</span>
         </a>
     </div>
-    
+    <main class="main-content">
+        <section class="section">
+            <h2>Explore</h2>
+            <div class="explore-grid">
+                <div class="ex-card" style="border-left: 8px solid #ff0055; background: #1a1a1a;">Energy</div>
+                <div class="ex-card" style="border-left: 8px solid #00ccff; background: #1a1a1a;">Relax</div>
+                <div class="ex-card" style="border-left: 8px solid #00ff66; background: #1a1a1a;">Focus</div>
+                <div class="ex-card" style="border-left: 8px solid #ffcc00; background: #1a1a1a;">Party</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>New Releases</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="https://picsum.photos/seed/new1/200/200" alt="Fresh Hits">
+                    <p class="t-main">Fresh Hits</p>
+                    <p class="t-sub">Updated Today</p>
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/seed/new2/200/200" alt="Global Top">
+                    <p class="t-main">Global Top 50</p>
+                    <p class="t-sub">Playlist</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <script src="script.js"></script>
 </body>

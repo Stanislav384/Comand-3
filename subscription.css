@@ -1,0 +1,59 @@
+/* Отступ слева равен ширине твоей панели */
+.main-content {
+    margin-left: 240px; 
+    padding: 40px;
+    background-color: #030303;
+    min-height: 100vh;
+}
+
+h2 { font-size: 28px; margin-bottom: 24px; color: white; }
+
+/* Сетка для музыки */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: 20px;
+}
+
+.card { cursor: pointer; transition: 0.2s; }
+.card img, .liked-box {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 8px;
+}
+
+.liked-box {
+    background: linear-gradient(135deg, #4527a0, #b39ddb);
+    display: flex; align-items: center; justify-content: center;
+}
+
+.t-main { font-weight: bold; font-size: 16px; margin-bottom: 4px; color: white; }
+.t-sub { color: #aaa; font-size: 14px; }
+
+/* Кнопки-фильтры */
+.chips { display: flex; gap: 10px; margin-bottom: 30px; }
+.chip {
+    background: #222; color: white;
+    padding: 8px 16px; border-radius: 8px;
+    font-weight: bold; cursor: pointer;
+}
+.chip.active { background: white; color: black; }
+
+/* Навигация карточки */
+.explore-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; }
+.ex-card { height: 80px; padding: 15px; border-radius: 6px; font-weight: bold; font-size: 18px; }
+
+/* Подписки */
+.subs-list { display: flex; flex-direction: column; gap: 15px; }
+.sub-item {
+    display: flex; align-items: center; background: #111;
+    padding: 10px 20px; border-radius: 12px;
+}
+.avatar { width: 60px; height: 60px; border-radius: 50%; margin-right: 20px; }
+.sub-info { flex-grow: 1; }
+.sub-btn {
+    background: transparent; border: 1px solid #444;
+    color: white; padding: 8px 16px; border-radius: 20px; cursor: pointer;
+}

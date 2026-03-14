@@ -11,7 +11,7 @@
     <div class="leftpanel">
         <img class="LOGO" alt="" src="on_platform_logo_dark.svg">
         <!--- Main --->
-        <a href="index.html" class="selected"> <!--Когда будешь делать другие страницы то поставь класс селектед только если это та страница на которой мы сейчас(Напривер щас мы на Main). Если нет то поставь класс unselected-->
+        <a href="index.html" class="unselected"> <!--Когда будешь делать другие страницы то поставь класс селектед только если это та страница на которой мы сейчас(Напривер щас мы на Main). Если нет то поставь класс unselected-->
             <svg class="icon_selected" viewBox="0 0 24 24" width="28" height="28"> <!-- Тут тоже, просто если не выбран то убираешь "_selected", если выбран то оставляешь "_selected"-->
                 <!-- Original path -->
                 <path 
@@ -59,7 +59,7 @@
             <span class="BUTTONTITLE">Library</span>
         </a>
         <!--- Subscription --->
-        <a href="subscription.html" class="unselected">
+        <a href="subscription.html" class="selected">
             <svg class="icon" viewBox="0 0 24 24" width="28" height="28">
                 <!-- Original path -->
                 <path 
@@ -80,7 +80,37 @@
             <span class="new">New</span>
         </a>
     </div>
-
+<main class="main-content">
+        <section class="section">
+            <h2>Your Subscriptions</h2>
+            <div class="subs-list">
+                <div class="sub-item">
+                    <img src="https://i.pravatar.cc/150?u=a1" class="avatar" alt="Artist">
+                    <div class="sub-info">
+                        <p class="t-main">The Weeknd</p>
+                        <p class="t-sub">25M Subscribers</p>
+                    </div>
+                    <button class="sub-btn">Subscribed</button>
+                </div>
+                <div class="sub-item">
+                    <img src="https://i.pravatar.cc/150?u=a2" class="avatar" alt="Artist">
+                    <div class="sub-info">
+                        <p class="t-main">Daft Punk</p>
+                        <p class="t-sub">12M Subscribers</p>
+                    </div>
+                    <button class="sub-btn">Subscribed</button>
+                </div>
+                <div class="sub-item">
+                    <img src="https://i.pravatar.cc/150?u=a3" class="avatar" alt="Artist">
+                    <div class="sub-info">
+                        <p class="t-main">Arctic Monkeys</p>
+                        <p class="t-sub">18M Subscribers</p>
+                    </div>
+                    <button class="sub-btn">Subscribed</button>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <script src="script.js"></script>
 </body>
