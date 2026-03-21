@@ -12,7 +12,7 @@
         <img class="LOGO" alt="" src="on_platform_logo_dark.svg">
         <!--- Main --->
         <a href="index.html" class="unselected"> <!--Когда будешь делать другие страницы то поставь класс селектед только если это та страница на которой мы сейчас(Напривер щас мы на Main). Если нет то поставь класс unselected-->
-            <svg class="icon_selected" viewBox="0 0 24 24" width="28" height="28"> <!-- Тут тоже, просто если не выбран то убираешь "_selected", если выбран то оставляешь "_selected"-->
+            <svg class="icon" viewBox="0 0 24 24" width="28" height="28"> <!-- Тут тоже, просто если не выбран то убираешь "_selected", если выбран то оставляешь "_selected"-->
                 <!-- Original path -->
                 <path 
                 class="path-original" 
@@ -60,7 +60,7 @@
         </a>
         <!--- Subscription --->
         <a href="subscription.html" class="selected">
-            <svg class="icon" viewBox="0 0 24 24" width="28" height="28">
+            <svg class="icon_selected" viewBox="0 0 24 24" width="28" height="28">
                 <!-- Original path -->
                 <path 
                 class="path-original" 
@@ -80,36 +80,34 @@
             <span class="new">New</span>
         </a>
     </div>
-<main class="main-content">
-        <section class="section">
-            <h2>Your Subscriptions</h2>
-            <div class="subs-list">
-                <div class="sub-item">
-                    <img src="https://i.pravatar.cc/150?u=a1" class="avatar" alt="Artist">
-                    <div class="sub-info">
-                        <p class="t-main">The Weeknd</p>
-                        <p class="t-sub">25M Subscribers</p>
-                    </div>
-                    <button class="sub-btn">Subscribed</button>
+<main class="main-content premium-layout">
+        <div class="premium-feed-container">
+            <section class="premium-hero-card">
+                <div class="premium-logo-row">
+                    <img src="https://www.gstatic.com/youtube/img/promos/growth/ycm_lp2_icon_60x60.png" alt="YT Music Logo">
+                    <span class="premium-tag">Premium</span>
                 </div>
-                <div class="sub-item">
-                    <img src="https://i.pravatar.cc/150?u=a2" class="avatar" alt="Artist">
-                    <div class="sub-info">
-                        <p class="t-main">Daft Punk</p>
-                        <p class="t-sub">12M Subscribers</p>
-                    </div>
-                    <button class="sub-btn">Subscribed</button>
+                <h1>YouTube Music</h1>
+                
+                <div class="premium-description">
+                    <p>Слушайте любимых исполнителей без ограничений. С подпиской Premium вам доступны:</p>
+                    <ul class="premium-benefits">
+                        <li><span>—</span> Музыка без рекламы в самом высоком качестве.</li>
+                        <li><span>—</span> Фоновое прослушивание: музыка не прерывается при закрытии приложения.</li>
+                        <li><span>—</span> Офлайн-режим: скачивайте любые треки и слушайте их без интернета.</li>
+                    </ul>
                 </div>
-                <div class="sub-item">
-                    <img src="https://i.pravatar.cc/150?u=a3" class="avatar" alt="Artist">
-                    <div class="sub-info">
-                        <p class="t-main">Arctic Monkeys</p>
-                        <p class="t-sub">18M Subscribers</p>
-                    </div>
-                    <button class="sub-btn">Subscribed</button>
+
+                <div class="premium-actions">
+                    <button class="btn-get-premium">Подробнее</button>
+                    <button class="btn-dismiss">Пропустить</button>
                 </div>
+            </section>
+
+            <div class="feed-status">
+                <p>Ваши персональные обновления от артистов появятся в этом разделе.</p>
             </div>
-        </section>
+        </div>
     </main>
 
     <script src="script.js"></script>

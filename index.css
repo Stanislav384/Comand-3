@@ -1,0 +1,91 @@
+body{
+    background-image: url("https://wallpapers.com/images/hd/dark-gradient-gw5zb5u4231un4q7.jpg");
+    background-repeat: no-repeat;
+    background-size: 200vh;
+}
+.Search{
+    padding-left: 270px;
+    padding-top: 50px;
+}
+.Search input{
+    width: 40vh;
+    height: 4vh;
+    border: 5px solid rgb(50, 50, 50);
+    background-color: rgb(80, 80, 80);
+    color: white;
+}
+.Search input::placeholder {
+    color: white;
+    padding-left: 15px;
+}
+.Tags{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10%;
+    padding-top: 50px;
+    gap: 30px;
+}
+.Tags a{
+    text-decoration: none;
+    background-color: rgba(105, 105, 105, 0.3);
+    color: white;
+    text-align: center;
+    padding: 10px 40px;
+    border-radius: 10px;
+}
+.Tags a:hover{
+    text-decoration: none;
+    background-color: rgb(105, 105, 105);
+    color: white;
+    text-align: center;
+    padding: 10px 40px;
+    border-radius: 10px;
+}
+.Recommended{
+    padding-left: 30vh;
+    padding-top: 40px;
+    color: white;
+}
+.Recommended h1{
+    padding-left: 6vh;
+}
+.Recommended .channel{
+    position: absolute;
+    top: 22.25vh;
+}
+#song-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-right: 2px;
+    gap: 12px;
+    width: 1200px;
+    max-width: 100%;
+    padding-top: 20px;
+}
+.song {
+    display: flex;
+    align-items: center;
+    margin-right: 2px;
+    padding-top: 10px;
+    border-radius: 8px;
+}
+.song img {
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+}
+.title {
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    padding-left: 10px;
+    letter-spacing: 1px;
+} 
+.artist {
+    color: #b3b3b3;
+    font-size: 20px;
+    padding-left: 10px;
+    letter-spacing: 1px;
+}

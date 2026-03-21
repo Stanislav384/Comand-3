@@ -1,30 +1,88 @@
-.main-content {
+/* Общий контейнер страницы */
+.premium-layout {
+    /* Этот отступ отодвигает контент от левого меню */
     margin-left: 240px; 
-    padding: 40px;
-    background-color: #030303;
+    padding: 40px 50px;
     min-height: 100vh;
+    background: #030303; /* Глубокий черный фон как в YT Music */
+    color: white;
+    box-sizing: border-box;
+    display: block;
 }
 
-h2 { font-size: 28px; margin-bottom: 24px; color: white; }
+/* Контейнер для текста и карточки */
+.premium-feed-container {
+    max-width: 800px;
+    margin: 0 auto; /* Центрируем контент в рабочей области */
+}
 
-.t-main { font-weight: bold; font-size: 16px; margin-bottom: 4px; color: white; }
-.t-sub { color: #aaa; font-size: 14px; }
-
-.subs-list { display: flex; flex-direction: column; gap: 15px; }
-.sub-item {
-    display: flex; 
-    align-items: center; 
-    background: #111;
-    padding: 10px 20px; 
+/* Стили карточки Premium */
+.premium-hero-card {
+    background-color: #111; /* Темно-серая карточка */
     border-radius: 12px;
+    padding: 40px;
+    border: 1px solid #222;
+    margin-bottom: 30px;
 }
-.avatar { width: 60px; height: 60px; border-radius: 50%; margin-right: 20px; object-fit: cover; }
-.sub-info { flex-grow: 1; }
-.sub-btn {
-    background: transparent; 
-    border: 1px solid #444;
-    color: white; 
-    padding: 8px 16px; 
-    border-radius: 20px; 
+
+/* Исправление логотипа */
+.premium-logo-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.premium-logo-row img {
+    width: 45px;
+    height: 45px;
+    display: block; /* Гарантирует отображение */
+}
+
+.premium-tag {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Список преимуществ */
+.premium-description p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.premium-benefits {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.premium-benefits li {
+    color: #aaaaaa;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Кнопки */
+.btn-get-premium {
+    background: white;
+    color: black;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-weight: bold;
     cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-dismiss {
+    background: transparent;
+    color: white;
+    border: 1px solid #444;
+    padding: 12px 28px;
+    border-radius: 30px;
+    margin-left: 15px;
+    cursor: pointer;
+    font-size: 16px;
 }
